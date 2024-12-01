@@ -1,15 +1,24 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaSnapchat, FaPinterestP, FaTwitter, FaLinkedin } from 'react-icons/fa';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faFacebook,
+  faInstagram,
+  faSnapchat,
+  faPinterestP,
+  faTwitter,
+  faLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
     <footer className='container'>
-      <FaFacebook className='fab fa-2x' />
-      <FaInstagram className='fab fa-2x' />
-      <FaSnapchat className='fab fa-2x' />
-      <FaPinterestP className='fab fa-2x' />
-      <FaTwitter className='fab fa-2x' />
-      <FaLinkedin className='fab fa-2x' />
+      <FontAwesomeIcon icon={faFacebook} size='2x' className='social-icon' style={{ marginRight: '10px' }} />
+      <FontAwesomeIcon icon={faInstagram} size='2x' className='social-icon' style={{ marginRight: '10px' }} />
+      <FontAwesomeIcon icon={faSnapchat} size='2x' className='social-icon' style={{ marginRight: '10px' }} />
+      <FontAwesomeIcon icon={faPinterestP} size='2x' className='social-icon' style={{ marginRight: '10px' }} />
+      <FontAwesomeIcon icon={faTwitter} size='2x' className='social-icon' style={{ marginRight: '10px' }} />
+      <FontAwesomeIcon icon={faLinkedin} size='2x' className='social-icon' style={{ marginRight: '10px' }} />
       <p>
         Powered by
         <a

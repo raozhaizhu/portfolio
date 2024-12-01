@@ -4,7 +4,7 @@ const Sidebar = () => {
   return (
     <div className='sidebar text-center'>
       <img
-        src='/img/veryMe.jpg'
+        src='https://i.imgur.com/bv0L1Qn.jpeg'
         alt='Avatar'
         className='img-responsive'
         style={{ width: '100%', mixBlendMode: 'screen' }}

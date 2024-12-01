@@ -8,7 +8,7 @@ const Portfolio = () => {
       <div className='row'>
         <div className='col-sm-6 equal-height'>
           <div className='thumbnail'>
-            <img src='/img/project1.png' alt='Project 1' />
+            <img src='https://i.imgur.com/xc8WZ4W.jpeg' alt='Project 1' />
             <p>
               <strong>Todolist Made with React</strong>
             </p>
@@ -18,7 +18,7 @@ const Portfolio = () => {
             </button>
           </div>
           <div className='thumbnail'>
-            <img src='./img/project2.png' alt='Project 2' />
+            <img src='https://i.imgur.com/nA1hvtM.jpeg' alt='Project 2' />
             <p>
               <strong>Shopping Cart</strong>
             </p>
@@ -33,7 +33,7 @@ const Portfolio = () => {
         </div>
         <div className='col-sm-6 equal-height'>
           <div className='thumbnail'>
-            <img src='/img/project3.png' alt='Project 3' />
+            <img src='https://i.imgur.com/JADWm6p.png' alt='Project 3' />
             <p>
               <strong>Weather App</strong>
             </p>
@@ -43,7 +43,7 @@ const Portfolio = () => {
             </button>
           </div>
           <div className='thumbnail'>
-            <img src='/img/project4.png' alt='Project 4' />
+            <img src='https://i.imgur.com/iN5cDYe.png' alt='Project 4' />
             <p>
               <strong>Blog App</strong>
             </p>

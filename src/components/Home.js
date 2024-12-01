@@ -7,7 +7,7 @@ const Home = () => {
         <em>I'm Raozhaizhu</em>
       </h1>
       <p className='white-font'>A Web Developer.</p>
-      <img className='poster img-responsive' src='./img/veryMe.jpg' alt='Me' />
+      <img className='poster img-responsive' src='https://i.imgur.com/bv0L1Qn.jpeg' alt='Me' />
     </section>
   );
 };
