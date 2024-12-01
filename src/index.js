@@ -1,18 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client'; // 使用 'react-dom/client' 来引入 createRoot
+import App from './App'; // 引入 App 组件
+import './styles/styles.css'; // 样式文件
+import './index.css'; // 可选的全局样式文件
+import './App.css'; // 可选的全局样式文件
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+// 获取页面中的根元素
+const rootElement = document.getElementById('root');
+
+// 使用 React 18 的 createRoot 方法来渲染
+const root = ReactDOM.createRoot(rootElement);
+
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import reportWebVitals from './reportWebVitals'; // 确保正确导入 reportWebVitals

@@ -1,0 +1,185 @@
+body {
+  background-color: black;
+  color: rgb(117, 117, 117);
+  font:
+    400 15px/1.8 Lato,
+    sans-serif;
+}
+h1,
+h2 {
+  color: white;
+  font-size: 40px;
+}
+h3,
+h4 {
+  color: white;
+  margin: 10px 0 30px 0;
+  letter-spacing: 10px;
+  font-size: 20px;
+}
+hr {
+  width: 220px;
+  margin-left: 0;
+}
+
+.white-font {
+  color: white;
+}
+
+.hover-text-green {
+  color: rgb(117, 117, 117);
+  text-decoration: underline;
+  &:hover {
+    color: #003366;
+  }
+}
+
+.margin-bottom-15 {
+  margin-bottom: 15px;
+}
+
+.hover-opacity {
+  color: white;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.form-control {
+  margin-bottom: 15px;
+  border-width: 0;
+  border-radius: 0;
+  padding: 25px;
+  &::placeholder {
+    font-size: 16px;
+  }
+}
+
+.container {
+  padding: 50px 120px;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border-radius: 0;
+  transition: 0.2s;
+  &:hover,
+  &:focus {
+    border: 1px solid #333;
+    background-color: black;
+    color: white;
+  }
+}
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  background-color: rgb(34, 34, 34);
+  position: fixed;
+  height: 100%;
+  i {
+    display: block;
+  }
+  /* Sidebar links */
+  a {
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+
+    /* Active/current link */
+    &.active {
+      background-color: black;
+      color: white;
+    }
+
+    /* Links on mouse-over */
+    &:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+  }
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+.content {
+  margin-left: 120px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 888px) {
+  .sidebar {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    a {
+      flex-grow: 1;
+      align-items: center;
+      padding: 20px;
+    }
+    i,
+    img {
+      margin-bottom: 0;
+      display: none;
+    }
+  }
+
+  .content {
+    margin-top: 80px;
+    margin-left: 0;
+  }
+}
+
+.equal-height {
+  height: 90vh;
+}
+
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+  background-color: rgb(153, 153, 153);
+  .btn {
+    border: none;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-size: 16px;
+  }
+  p {
+    margin-top: 15px;
+    color: rgb(85, 85, 85);
+  }
+  img {
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: grayscale(50%) contrast(85%) brightness(60%);
+  }
+  &:hover {
+    background-color: white;
+    img {
+      filter: none;
+    }
+    .btn {
+      background-color: black; // Only change background to black on thumbnail hover
+      color: #f1f1f1; // Set button text color to white on thumbnail hover
+      &:hover,
+      &focus {
+        background-color: black; // Only change background to black on thumbnail hover
+        color: white;
+      }
+    }
+  }
+}
