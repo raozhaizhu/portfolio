@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faUser, faEye, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => {
   return (
@@ -10,16 +12,24 @@ const Sidebar = () => {
         style={{ width: '100%', mixBlendMode: 'screen' }}
       />
       <a className='active' href='#home'>
-        <i className='fa fa-home fa-2x margin-bottom-15'></i>HOME
+        <FontAwesomeIcon icon={faHome} size='2x' style={{ marginBottom: '15px' }} />
+        <br />
+        HOME
       </a>
       <a href='#about'>
-        <i className='fa fa-eye fa-2x margin-bottom-15'></i>ABOUT
+        <FontAwesomeIcon icon={faUser} size='2x' style={{ marginBottom: '15px' }} />
+        <br />
+        ABOUT
       </a>
       <a href='#portfolio'>
-        <i className='fa fa-eye fa-2x margin-bottom-15'></i>PORTFOLIO
+        <FontAwesomeIcon icon={faEye} size='2x' style={{ marginBottom: '15px' }} />
+        <br />
+        PORTFOLIO
       </a>
       <a href='#contact'>
-        <i className='fa fa-envelope fa-2x margin-bottom-15'></i>CONTACT
+        <FontAwesomeIcon icon={faEnvelope} size='2x' style={{ marginBottom: '15px' }} />
+        <br />
+        CONTACT
       </a>
     </div>
   );

@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt, faPhone, faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
   return (
@@ -6,16 +8,28 @@ const Contact = () => {
       <h2>Contact Me</h2>
       <hr />
       <p>
-        <i className='fa fa-map-marker-alt far fa-fw fa-2x' style={{ color: 'white', marginRight: '10px' }}></i>{' '}
+        <FontAwesomeIcon
+          icon={faMapMarkerAlt}
+          size='2x'
+          style={{ color: 'white', marginRight: '10px', width: '30px', height: '30px' }}
+        />{' '}
         Wenzhou, Zhejiang, China
       </p>
       <p>
-        <i className='fa fa-phone fa-fw fa-2x' style={{ color: 'white', marginRight: '10px' }}></i> Phone: +86
-        138-1234-5678
+        <FontAwesomeIcon
+          icon={faPhone}
+          size='2x'
+          style={{ color: 'white', marginRight: '10px', width: '30px', height: '30px' }}
+        />{' '}
+        Phone: +86 138-1234-5678
       </p>
       <p>
-        <i className='fa fa-envelope fa-fw fa-2x' style={{ color: 'white', marginRight: '10px' }}></i> Email:
-        raozhaizhu@gmail.com
+        <FontAwesomeIcon
+          icon={faEnvelope}
+          size='2x'
+          style={{ color: 'white', marginRight: '10px', width: '30px', height: '30px' }}
+        />{' '}
+        Email: raozhaizhu@gmail.com
       </p>
 
       <br />
@@ -26,7 +40,7 @@ const Contact = () => {
         <input className='form-control' id='subject' name='subject' placeholder='Subject' type='text' required />
         <input className='form-control' id='message' name='message' placeholder='Message' type='text' required />
         <button className='btn btn-default' type='submit' style={{ display: 'block', width: '20%' }}>
-          <i className='fa fa-paper-plane'></i> SEND MESSAGE
+          <FontAwesomeIcon icon={faPaperPlane} size='2x' style={{ color: 'white' }} /> SEND MESSAGE
         </button>
       </form>
     </section>
@@ -34,4 +48,16 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
+
+
+
+
+
+
+
+
+
 
