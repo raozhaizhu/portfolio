@@ -39,8 +39,19 @@ const Contact = () => {
         <input className='form-control' id='email' name='email' placeholder='Email' type='email' required />
         <input className='form-control' id='subject' name='subject' placeholder='Subject' type='text' required />
         <input className='form-control' id='message' name='message' placeholder='Message' type='text' required />
-        <button className='btn btn-default' type='submit' style={{ display: 'block', width: '20%' }}>
-          <FontAwesomeIcon icon={faPaperPlane} size='2x' style={{ color: 'white' }} /> SEND MESSAGE
+        <button
+          className='btn btn-default'
+          type='submit'
+          style={{
+            width: '20%',
+            minWidth: '240px',
+            display: 'inline-flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <FontAwesomeIcon icon={faPaperPlane} size='2x' style={{ color: 'black', marginRight: '10px' }} />
+          SEND MESSAGE
         </button>
       </form>
     </section>
@@ -48,6 +59,26 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

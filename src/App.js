@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <Sidebar />
-      <div className='content'>
+      <div className='content main'>
         <Home />
         <About />
         <Portfolio />

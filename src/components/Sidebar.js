@@ -8,27 +8,23 @@ const Sidebar = () => {
       <img
         src='https://i.imgur.com/bv0L1Qn.jpeg'
         alt='Avatar'
-        className='img-responsive'
+        className='img-responsive sidebar-icon'
         style={{ width: '100%', mixBlendMode: 'screen' }}
       />
       <a className='active' href='#home'>
-        <FontAwesomeIcon icon={faHome} size='2x' style={{ marginBottom: '15px' }} />
-        <br />
+        <FontAwesomeIcon icon={faHome} size='2x' style={{ marginBottom: '15px' }} className='sidebar-icon' />
         HOME
       </a>
       <a href='#about'>
-        <FontAwesomeIcon icon={faUser} size='2x' style={{ marginBottom: '15px' }} />
-        <br />
+        <FontAwesomeIcon icon={faUser} size='2x' style={{ marginBottom: '15px' }} className='sidebar-icon' />
         ABOUT
       </a>
       <a href='#portfolio'>
-        <FontAwesomeIcon icon={faEye} size='2x' style={{ marginBottom: '15px' }} />
-        <br />
+        <FontAwesomeIcon icon={faEye} size='2x' style={{ marginBottom: '15px' }} className='sidebar-icon' />
         PORTFOLIO
       </a>
       <a href='#contact'>
-        <FontAwesomeIcon icon={faEnvelope} size='2x' style={{ marginBottom: '15px' }} />
-        <br />
+        <FontAwesomeIcon icon={faEnvelope} size='2x' style={{ marginBottom: '15px' }} className='sidebar-icon' />
         CONTACT
       </a>
     </div>
