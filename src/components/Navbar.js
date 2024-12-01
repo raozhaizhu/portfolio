@@ -1,64 +1,32 @@
-// src/components/Navbar.js
-import React from "react";
 
-const Navbar = () => {
+
+import React from "react";
+import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
+
+const App = () => {
   return (
-    <nav className="navbar navbar-default navbar-fixed-top">
-      <div className="container-fluid">
-        <button
-          className="navbar-toggle"
-          data-toggle="collapse"
-          data-target="#myNavbar">
-          <span className="icon-bar"></span>
-          <span className="icon-bar"></span>
-          <span className="icon-bar"></span>
-        </button>
-        <a className="navbar-brand" href="www.baidu.com">
-          Logo
-        </a>
-        <div className="collapse navbar-collapse" id="myNavbar">
-          <ul className="nav navbar-nav navbar-right">
-            <li>
-              <a href="#myCarousel">HOME</a>
-            </li>
-            <li>
-              <a href="#band">BAND</a>
-            </li>
-            <li>
-              <a href="#tour">TOUR</a>
-            </li>
-            <li>
-              <a href="#contact">CONTACT</a>
-            </li>
-            <li className="dropdown">
-              <a
-                className="dropdown-toggle"
-                data-toggle="dropdown"
-                href="www.baidu.com">
-                MORE<span className="caret"></span>
-              </a>
-              <ul className="dropdown-menu">
-                <li>
-                  <a href="www.baidu.com">Merchandise</a>
-                </li>
-                <li>
-                  <a href="www.baidu.com">Extras</a>
-                </li>
-                <li>
-                  <a href="www.baidu.com">Media</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="www.baidu.com">
-                <span className="glyphicon glyphicon-search"></span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div>
+      {/* Navbar 示例 */}
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand href="#home">React Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#home">首页</Nav.Link>
+            <Nav.Link href="#about">关于</Nav.Link>
+            <NavDropdown title="更多" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">动作1</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">动作2</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">动作3</NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+
+      {/* Button 示例 */}
+      <Button variant="primary">点击我</Button>
+    </div>
   );
 };
 
-export default Navbar;
+export default App;
