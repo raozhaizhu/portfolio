@@ -120,7 +120,6 @@ hr {
     position: fixed;
     top: 0;
     left: 0;
-    right:0;
     z-index: 1000;
     display: flex;
     justify-content: space-evenly;
@@ -135,7 +134,8 @@ hr {
  
     }
     .sidebar-icon {
-      margin-bottom: 0;
+      margin: 0;
+      padding:0;
       display: none;
     }
   }

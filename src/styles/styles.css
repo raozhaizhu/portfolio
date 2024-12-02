@@ -1,7 +1,4 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+body {
   background-color: black;
   color: rgb(117, 117, 117);
   font: 400 15px/1.8 Lato, sans-serif;
@@ -127,7 +124,6 @@ hr {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
     z-index: 1000;
     display: flex;
     justify-content: space-evenly;
@@ -142,7 +138,8 @@ hr {
     text-align: center;
   }
   .sidebar .sidebar-icon {
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
     display: none;
   }
   .content {
@@ -153,8 +150,8 @@ hr {
   #about,
   #portfolio,
   #contact {
-    width: 90%;
-    padding: 50px 10px;
+    width: 85%;
+    padding: 50px 20px;
   }
 }
 .equal-height {
