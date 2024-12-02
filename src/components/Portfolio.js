@@ -6,7 +6,7 @@ const Portfolio = () => {
       <h2>My Portfolio</h2>
       <hr />
       <div className='row'>
-        <div className='col-sm-6 equal-height'>
+        <div className='col-sm-6'>
           <div className='thumbnail'>
             <img src='https://i.imgur.com/xc8WZ4W.jpeg' alt='Project 1' />
             <p>
@@ -31,7 +31,7 @@ const Portfolio = () => {
             </button>
           </div>
         </div>
-        <div className='col-sm-6 equal-height'>
+        <div className='col-sm-6'>
           <div className='thumbnail'>
             <img src='https://i.imgur.com/JADWm6p.png' alt='Project 3' />
             <p>
